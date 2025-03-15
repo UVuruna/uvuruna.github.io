@@ -1,0 +1,127 @@
+.lets-chat-frame {
+  background: #ffffff;
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  padding: 50px 100px 50px 100px;
+}
+
+.lets-chat-1 {
+  width: 50%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.lets-chat-2 {
+  width: 50%;
+  position: relative;
+}
+
+.lets-chat-title {
+  color: #000000;
+  font-size: 55px;
+  font-weight: 600;
+  position: relative;
+}
+
+.lets-chat-text {
+  color: #000000;
+  text-align: justify;
+  font-size: 16px;
+  font-weight: 400;
+  position: relative;
+  max-width: 550px;
+}
+
+.lets-chat-form {
+  width: 95%;
+  max-width: 500px;
+  position: relative;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+#name,
+#email {
+  width: 95%;
+  max-width: 500px;
+  background-color: #ffffff;
+  border-radius: 100px;
+  border-style: solid;
+  border-color: #000000;
+  border-width: 1px;
+  height: 50px;
+  font-size: 18px;
+  font-weight: 500;
+  position: relative;
+  color: rgba(0, 0, 0, 0.8);
+  text-align: left;
+  padding: 0.8em 2em;
+  margin: 0.5em;
+}
+
+.lets-chat-frame .button.blue {
+  background: #496bef;
+  width: 319px;
+  height: 46px;
+  position: relative;
+  color: #ffffff;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 25px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Stilovi za telefone */
+@media (max-width: 768px) {
+  .lets-chat-frame {
+    padding: 15px 10px 15px 10px;
+    flex-direction: column;
+  }
+  .lets-chat-1 {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .lets-chat-2 {
+    width: 100%;
+  }
+
+  .lets-chat-title {
+    font-size: 35px;
+  }
+
+  .lets-chat-text {
+    font-size: 13px;
+    width: 80%;
+  }
+
+  .lets-chat-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  #name,
+  #email {
+    width: 80%;
+    border-radius: 60px;
+    padding: 0.5em 1em;
+    font-size: 15px;
+  }
+
+  .lets-chat-frame .button.blue {
+    background: #496bef;
+    width: 250px;
+    height: 40px;
+    font-size: 15px;
+    position: relative;
+    left: 0;
+    transform: none;
+    margin-top: 10px;
+  }
+}

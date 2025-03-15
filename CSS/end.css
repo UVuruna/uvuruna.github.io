@@ -1,0 +1,99 @@
+.end-frame {
+  box-sizing: border-box;
+  background: #181818;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  padding: 40px 80px;
+}
+
+.end-1 {
+  width: 100%;
+  height: 100%;
+}
+
+.MxD-logo-white {
+  width: 288px;
+  height: 83px;
+  position: relative;
+  margin: 40px 0;
+  object-fit: cover;
+}
+
+.end-2 {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  color: #ffffff;
+  text-align: left;
+  flex-grow: 1;
+}
+
+.end-services-list,
+.end-verticles-list,
+.end-marketing-solutions-list {
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+  font-weight: 400;
+  flex-grow: 1;
+  max-width: 200px;
+}
+
+.end-services-list,
+.end-verticles-list {
+  margin-right: 20px;
+}
+
+.end-title-frame {
+  margin-bottom: 15px;
+  color: #ffffff;
+  text-align: left;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.end-services-list a,
+.end-verticles-list a,
+.end-marketing-solutions-list a {
+  color: inherit;
+  text-decoration: none;
+  padding: 5px 0;
+  color: #80868a;
+  white-space: normal;
+}
+
+@media (max-width: 768px) {
+  .end-frame {
+    padding: 0 40px 40px 40px;
+    flex-direction: column;
+  }
+
+  .end-1 {
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    display: flex;
+  }
+
+  .MxD-logo-white {
+    margin: 0 0 40px 0;
+  }
+
+  .end-services-list,
+  .end-verticles-list,
+  .end-marketing-solutions-list {
+    font-size: 11px;
+    width: 33.3%;
+  }
+  .end-services-list,
+  .end-verticles-list {
+    margin-right: 20px;
+  }
+  .end-title-frame {
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

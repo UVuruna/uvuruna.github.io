@@ -1,0 +1,205 @@
+.about-us-frame {
+  width: 85%;
+  position: relative;
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.what-we-do,
+.who-we-are {
+  position: relative;
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+}
+
+.who-we-are {
+  flex-direction: row-reverse;
+}
+
+#what-we-do-1,
+#who-we-are-1 {
+  padding-top: 80px;
+  color: #000000;
+  text-align: left;
+  position: relative;
+  width: 45%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+#who-we-are-1 {
+  margin-left: 120px;
+}
+
+#what-we-do-2, #who-we-are-2 {
+  height: 550px;
+}
+
+#what-we-do-2,
+#who-we-are-2 {
+  position: relative;
+  width: 55%;
+  flex-grow: 1;
+}
+
+.about-us-frame button.blue {
+  background: #496bef;
+  width: 216px;
+  height: 46px;
+  color: #ffffff;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.what-we-do-title,
+.what-we-do-text,
+.what-we-do-explain,
+.who-we-are-title,
+.who-we-are-text,
+.who-we-are-explain,
+.about-us-frame button.blue {
+  position: relative;
+  margin-top: 20px;
+  margin-bottom: 35px;
+}
+
+.what-we-do-title,
+.who-we-are-title {
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.what-we-do-text,
+.who-we-are-text {
+  font-size: 45px;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.what-we-do-explain,
+.who-we-are-explain {
+  font-size: 16px;
+  font-weight: 400;
+  width: 82%;
+}
+
+.what-we-do-img {
+  border-radius: 20px;
+  width: 510px;
+  height: 435px;
+  z-index: 2;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.what-we-do-filler-img {
+  border-radius: 20px;
+  width: 510px;
+  height: 393px;
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: scaleX(-1);
+}
+
+.who-we-are-img {
+  border-radius: 20px;
+  width: 510px;
+  height: 435px;
+  z-index: 2;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.who-we-are-filler-img {
+  border-radius: 20px;
+  width: 510px;
+  height: 393px;
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* Stilovi za telefone */
+@media (max-width: 768px) {
+  .about-us-frame {
+    width: 90%;
+    margin-top: 20px;
+  }
+
+  .what-we-do,
+  .who-we-are {
+    flex-direction: column;
+  }
+
+  #what-we-do-2, #who-we-are-2 {
+    height: 250px;
+  }
+  
+
+  #what-we-do-1,
+  #who-we-are-1,
+  #what-we-do-2,
+  #who-we-are-2 {
+    width: 100%;
+    padding-top: 0px;
+    margin-left: 0px;
+  }
+  #who-we-are-1 {
+    text-align: right;
+    align-items: flex-end;
+  }
+  .what-we-do-img,
+  .who-we-are-img {
+    width: 250px;
+    height: 200px;
+  }
+
+  .what-we-do-filler-img,
+  .who-we-are-filler-img {
+    width: 250px;
+    height: 180px;
+  }
+
+  .what-we-do-title,
+  .who-we-are-title {
+    font-size: 25px;
+  }
+
+  .what-we-do-text,
+  .who-we-are-text {
+    font-size: 20px;
+  }
+
+  .what-we-do-explain,
+  .who-we-are-explain {
+    font-size: 14px;
+    width: 100%;
+  }
+
+  .who-we-are-title,
+  .what-we-do-title {
+    margin-top: 25px;
+    margin-bottom: 10px;
+  }
+  .what-we-do-text,
+  .what-we-do-explain,
+  .who-we-are-text,
+  .who-we-are-explain,
+  .about-us-frame button.blue {
+    margin-top: 5px;
+    margin-bottom: 10px;
+  }
+}
