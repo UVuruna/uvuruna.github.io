@@ -34,6 +34,4 @@ function trackPositions(element1, element2, targetElement) {
   window.addEventListener('resize', updateHeight);
 }
 
-window.onload = function () {
-  trackPositions('#dot-start', '#dot-end', '.scaling-business-vector');
-};
+trackPositions('#dot-start', '#dot-end', '.scaling-business-vector');

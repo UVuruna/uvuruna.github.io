@@ -18,6 +18,8 @@ function loadScript (url) {
 }
 
 loadScript('./JS/html_load.js')
-loadScript('./JS/carousel.js')
-loadScript('./JS/vector_height.js')
 
+window.onload = function () {
+  loadScript('./JS/carousel.js')
+  loadScript('./JS/vector_height.js')
+}
