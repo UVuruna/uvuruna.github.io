@@ -6,7 +6,7 @@ function initializeCarousel (carouselId) {
       const prev = carousel.querySelector('.prev')
       const next = carousel.querySelector('.next')
       const track = carousel.querySelector('.track')
-      const cards = carousel.querySelectorAll('.card-container')
+      const cards = carousel.querySelectorAll('.card')
 
       if (prev && next && track && cards.length > 0) {
         clearInterval(checkExist)

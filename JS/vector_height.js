@@ -20,7 +20,6 @@ function trackPositions(element1, element2, targetElement) {
     }
   }
 
-  // First time calculation
   var checkExist = setInterval(function () {
     if (document.querySelector(element1) && document.querySelector(element2)) {
       clearInterval(checkExist);
@@ -30,8 +29,7 @@ function trackPositions(element1, element2, targetElement) {
     }
   }, 50);
 
-  // Adding resize event listener
   window.addEventListener('resize', updateHeight);
 }
 
-trackPositions('#dot-start', '#dot-end', '.scaling-business-vector');
+trackPositions('#dot-start', '#dot-end', '#vector');

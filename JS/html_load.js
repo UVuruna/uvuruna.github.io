@@ -1,7 +1,10 @@
-function loadHTML (elementId, filePath) {
+// LOADING DIV element
+function loadHTML (elementId, filePath, cssPath = null) {
   fetch(filePath)
     .then(response => response.text())
-    .then(data => (document.getElementById(elementId).innerHTML = data))
+    .then(data => {
+      document.getElementById(elementId).innerHTML = data
+    })
     .catch(error => console.error(`Error loading ${filePath}:`, error))
 }
 
