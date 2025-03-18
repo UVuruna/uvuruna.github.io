@@ -1,168 +1,117 @@
-.top-frame {
+/* --- PC Devices --- */
+
+/* Frames */
+.top {
+  background-image: url('../Data/Images/top-image.webp');
+  background-position: center;
+  height: 700px;
   width: 100%;
   margin-top: 60px;
-  height: 700px;
   position: relative;
   z-index: 1;
   display: flex;
   flex-direction: column;
 }
 
-.top-frame-img {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-}
-
-.top-frame-img-mobile {
-  display: none;
-}
-
-.top-frame-1 {
-  width: 100%;
+.top h1 {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
   height: 50%;
-  position: relative;
-}
-
-.top-frame-2 {
-  width: 100%;
-  height: 50%;
-  position: relative;
-}
-
-.top-frame-text {
-  width: 100%;
-  max-width: 1300px;
   color: #ffffff;
   text-align: center;
   font-size: 64px;
   font-weight: 400;
-  position: relative;
-  top: 50%;
-  left: 50%;
-  transform: translateX(-50%);
 }
 
-.get-started,
-.contact-sales,
-.play-video {
+.top-buttons,
+.top-video {
+  width: 100%;
+  height: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Buttons */
+.top-buttons {
+  align-items: center;
+  gap: 40px;
+}
+
+.top-video {
+  align-items: flex-end;
+  padding-bottom: 35px;
+}
+
+.top button.white,
+.top button.blue {
+  border-radius: 10px;
   width: 200px;
   height: 58px;
-  border-radius: 10px;
-  top: 20%;
-  font-size: 20px;
-  font-weight: 400;
-  position: absolute;
-  z-index: 2;
 }
 
-.get-started {
-  background: #ffffff;
-  left: 35%;
+.top button.white {
   color: #0065fa;
 }
 
-.contact-sales {
-  background: #0065fa;
-  right: 35%;
-  color: #ffffff;
-}
-
-.play-video {
+.top a {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   color: #ffffff;
-  left: 50%;
-  top: 180%;
-  transform: translate(-50%, -50%);
 }
 
-.play-video:hover {
+.top a:hover {
   font-weight: 600;
 }
 
-.play-video-img {
-  /* -- 4 -- */
-  width: 34px;
-  height: 34px;
-  margin-right: 10px;
-  object-fit: cover;
-  aspect-ratio: 1;
+.top-video img {
+  height: 35px;
+  margin-right: 15px;
 }
 
-@media (max-width: 1300px) {
-  .top-frame-text {
-    font-size: 60px;
-    font-weight: 400;
-    top: 20%;
+/* --- TABLET Devices --- */
+@media (min-width: 768px) and (max-width: 1300px) {
+
+  /* Frames */
+  .top {
+    height: 500px;
+    margin-top: 30px;
   }
 
-  .get-started {
-    left: 15%;
-  }
-
-  .contact-sales {
-    right: 15%;
+  .top h1 {
+    font-size: 44px;
   }
 }
 
-/* Stilovi za telefone */
+/* --- MOBILE Devices --- */
 @media (max-width: 768px) {
-  .top-frame {
+
+  /* Frames */
+  .top {
+    background-image: url('../Data/Images/top-image-mobile.webp');
     height: 400px;
+    margin-top: 20px;
   }
 
-  .top-frame-1 {
-    height: 70%;
+  .top h1 {
+    font-size: 33px;
   }
 
-  .top-frame-2 {
-    height: 30%;
-  }
-  .top-frame-img {
-    display: none;
-  }
-
-  .top-frame-img-mobile {
-    display: flex;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-  }
-  .top-frame-text {
-    font-size: 36px;
-    font-weight: 400;
-    position: relative;
-    top: 10%;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-
-  .get-started,
-  .contact-sales,
-  .play-video {
-    width: 130px;
-    height: 48px;
-    top: 30%;
-    font-size: 16px;
-  }
-
-  .get-started {
-    left: 8%;
-  }
-
-  .contact-sales {
-    right: 8%;
-  }
-
-  .play-video {
-    display: flex;
+  /* Buttons */
+  .top-buttons {
     align-items: center;
-    justify-content: center;
-    color: #ffffff;
-    left: 50%;
-    top: 90%;
-    transform: translate(-50%, -50%);
+    gap: 30px;
+  }
+
+  .top button.white,
+  .top button.blue {
+    width: 150px;
+  }
+
+  .top-video {
+    align-items: flex-end;
+    padding-bottom: 25px;
   }
 }

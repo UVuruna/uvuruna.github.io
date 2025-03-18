@@ -1,4 +1,8 @@
-.end-frame {
+/* --- ALL Devices --- */
+
+/* Frames */
+
+.end {
   box-sizing: border-box;
   background: #181818;
   width: 100%;
@@ -7,20 +11,11 @@
   padding: 40px 80px;
 }
 
-.end-1 {
+.end .logo {
   width: 100%;
-  height: 100%;
 }
 
-.MxD-logo-white {
-  width: 288px;
-  height: 83px;
-  position: relative;
-  margin: 40px 0;
-  object-fit: cover;
-}
-
-.end-2 {
+.end .text {
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -29,34 +24,36 @@
   flex-grow: 1;
 }
 
-.end-services-list,
-.end-verticles-list,
-.end-marketing-solutions-list {
+.end .text>* {
   display: flex;
   flex-direction: column;
-  font-size: 12px;
-  font-weight: 400;
   flex-grow: 1;
   max-width: 200px;
 }
 
-.end-services-list,
-.end-verticles-list {
+.end .text> :nth-child(1),
+.end .text> :nth-child(2) {
   margin-right: 20px;
 }
 
-.end-title-frame {
-  margin-bottom: 15px;
-  color: #ffffff;
-  text-align: left;
-  font-size: 18px;
-  font-weight: 500;
+/* Images */
+
+.end .logo img {
+  height: 83px;
+  position: relative;
+  margin: 40px 0;
+  object-fit: cover;
 }
 
-.end-services-list a,
-.end-verticles-list a,
-.end-marketing-solutions-list a {
-  color: inherit;
+/* Text */
+
+.end .text h4 {
+  margin-bottom: 15px;
+}
+
+.end .text a {
+  font-size: 12px;
+  font-weight: 400;
   text-decoration: none;
   padding: 5px 0;
   color: #80868a;
@@ -64,33 +61,32 @@
 }
 
 @media (max-width: 768px) {
-  .end-frame {
-    padding: 0 40px 40px 40px;
+  .end {
+    padding: 0 20px 20px 20px;
     flex-direction: column;
   }
 
-  .end-1 {
-    width: 100%;
-    height: 100%;
+  .end .logo {
     justify-content: center;
     display: flex;
   }
 
-  .MxD-logo-white {
-    margin: 0 0 40px 0;
+  .end .logo img {
+    margin: 20px 0;
   }
 
-  .end-services-list,
-  .end-verticles-list,
-  .end-marketing-solutions-list {
-    font-size: 11px;
+  .end .text > * {
     width: 33.3%;
   }
-  .end-services-list,
-  .end-verticles-list {
-    margin-right: 20px;
+
+  .end .text a {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 10px 0;
   }
-  .end-title-frame {
+
+  .end .text h4  {
     height: 60px;
     display: flex;
     justify-content: center;

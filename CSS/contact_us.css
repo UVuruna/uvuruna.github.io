@@ -1,112 +1,108 @@
-.contact-us {
+/* --- ALL Devices --- */
+
+/* Frames */
+
+.contact_us {
+  width: 100%;
   background-color: #181818;
   display: flex;
   flex-direction: row;
   padding: 40px 80px;
 }
 
-.contact-1-frame {
+.contact_us .text {
   width: 50%;
   display: block;
 }
-.contact-2-frame {
+
+.contact_us form {
   width: 50%;
-  height: 310px;
-}
-
-.contact-title {
-  color: #ffffff;
-  font-size: 55px;
-  font-weight: 600;
-}
-.contact-explain {
-  padding: 30px 0;
-  color: #ffffff;
-  text-align: justify;
-  font-size: 16px;
-  font-weight: 400;
-  width: 550px;
-}
-.contact-text {
-  padding: 20px 0;
-  color: #ffffff;
-  text-align: left;
-  font-size: 25px;
-  font-weight: 600;
-}
-
-.contact-logo {
-  color: #181818;
-  display: flex;
-  flex-direction: row;
-  gap: 15px;
-}
-
-.link-twitter,
-.link-linkedin,
-.link-instagram {
-  width: 36px;
-  height: 36px;
-  object-fit: cover;
-}
-
-.contact-form {
   position: relative;
-  width: 90%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.contact-us .button.blue {
-  background: #496bef;
-  width: 350px;
-  height: 50px;
-  font-size: 18px;
-  position: relative;
-  margin-top: 30px;
+.contact_us .logo {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
 }
 
-@media (max-width: 768px) {
-  .contact-us {
-    flex-direction: column;
-    padding: 20px;
+/* Text */
+
+.contact_us h1 {
+  color: #ffffff;
+}
+
+.contact_us p {
+  padding: 30px 0;
+  color: #ffffff;
+  text-align: justify;
+  max-width: 550px;
+}
+
+.contact_us h3 {
+  padding: 20px 0;
+  color: #ffffff;
+}
+
+/* Images */
+
+.contact_us .logo img {
+  height: 36px;
+  object-fit: cover;
+}
+
+/* --- TABLET Devices --- */
+
+@media (min-width: 768px) and (max-width: 1300px) {
+  /* Frames */
+  .contact_us {
+    padding: 20px 40px;
   }
 
-  .contact-1-frame {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-  }
-  .contact-2-frame {
-    width: 100%;
+  /* Text */
+
+  .contact_us h1 {
+    font-size: 30px;
   }
 
-  .contact-title {
-    font-size: 25px;
-  }
-  .contact-explain {
+  .contact_us p {
     font-size: 13px;
-    width: 100%;
-  }
-  .contact-text {
-    padding: 20px 0;
-    font-size: 18px;
   }
 
-  .contact-logo {
-    justify-content: center;
+  .contact_us h3 {
+    font-size: 20px;
+  }
+}
+
+/* --- MOBILE Devices --- */
+
+@media (max-width: 768px) {
+  /* Frames */
+  .contact_us {
+    padding: 10px 20px;
+    flex-direction: column;
   }
 
-  .contact-form {
-    padding-top: 40px;
+  .contact_us form,
+  .contact_us .text {
     width: 100%;
   }
-  .contact-us .button.blue {
-    width: 250px;
-    height: 40px;
-    font-size: 15px;
-    margin-top: 10px;
+
+  /* Text */
+
+  .contact_us h1 {
+    font-size: 30px;
+  }
+
+  .contact_us p {
+    font-size: 13px;
+  }
+
+  .contact_us h3 {
+    font-size: 20px;
   }
 }

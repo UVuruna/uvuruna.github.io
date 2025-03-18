@@ -1,127 +1,119 @@
-.lets-chat-frame {
-  background: #ffffff;
-  width: 100%;
-  position: relative;
+/* --- PC Devices --- */
+
+/* Frames */
+.ai_chat {
+  width: 75%;
   display: flex;
   flex-direction: row;
-  padding: 50px 100px 50px 100px;
+  justify-content: center;
+  margin: 50px 0;
 }
 
-.lets-chat-1 {
+.ai_chat-text {
   width: 50%;
   position: relative;
   display: flex;
   flex-direction: column;
 }
 
-.lets-chat-2 {
+.ai_chat form {
   width: 50%;
-  position: relative;
 }
 
-.lets-chat-title {
-  color: #000000;
-  font-size: 55px;
-  font-weight: 600;
-  position: relative;
+/* Text */
+
+.ai_chat h1 {
+  line-height: 1em;
+  margin-bottom: 0.5em;
 }
 
-.lets-chat-text {
-  color: #000000;
+.ai_chat p {
   text-align: justify;
-  font-size: 16px;
-  font-weight: 400;
-  position: relative;
   max-width: 550px;
 }
 
-.lets-chat-form {
-  width: 95%;
-  max-width: 500px;
-  position: relative;
-  font-size: 18px;
-  font-weight: 500;
+/* --- TABLET Devices --- */
+
+@media (min-width: 768px) and (max-width: 1300px) {
+  /* Frames */
+
+  .ai_chat {
+    width: 95%;
+  }
+
+  .ai_chat-text {
+    margin: 0 25px;
+  }
+
+  .ai_chat form {
+    margin: 0 25px;
+  }
+
+  /* Text */
+
+  .ai_chat-text h1 {
+    font-size: 40px;
+  }
+
+  .ai_chat-text p {
+    font-size: 15px;
+  }
+
+  form #name,
+  form #email {
+    width: 85%;
+    height: 45px;
+    padding: 0 1em;
+  }
+
+  form .button {
+    font-size: 15px;
+    width: 200px;
+    height: 40px;
+    margin: 1em 0 0 0;
+  }
 }
 
-#name,
-#email {
-  width: 95%;
-  max-width: 500px;
-  background-color: #ffffff;
-  border-radius: 100px;
-  border-style: solid;
-  border-color: #000000;
-  border-width: 1px;
-  height: 50px;
-  font-size: 18px;
-  font-weight: 500;
-  position: relative;
-  color: rgba(0, 0, 0, 0.8);
-  text-align: left;
-  padding: 0.8em 2em;
-  margin: 0.5em;
-}
+/* --- MOBILE Devices --- */
 
-.lets-chat-frame .button.blue {
-  background: #496bef;
-  width: 319px;
-  height: 46px;
-  position: relative;
-  color: #ffffff;
-  text-align: center;
-  font-size: 18px;
-  font-weight: 500;
-  margin-top: 25px;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-/* Stilovi za telefone */
 @media (max-width: 768px) {
-  .lets-chat-frame {
-    padding: 15px 10px 15px 10px;
+  /* Frames */
+
+  .ai_chat {
+    width: 90%;
     flex-direction: column;
   }
-  .lets-chat-1 {
-    width: 100%;
-    margin-bottom: 30px;
-  }
 
-  .lets-chat-2 {
+  .ai_chat-text {
     width: 100%;
   }
 
-  .lets-chat-title {
-    font-size: 35px;
-  }
-
-  .lets-chat-text {
-    font-size: 13px;
-    width: 80%;
-  }
-
-  .lets-chat-form {
+  .ai_chat form {
     width: 100%;
-    display: flex;
-    flex-direction: column;
     align-items: flex-end;
   }
-  #name,
-  #email {
-    width: 80%;
-    border-radius: 60px;
-    padding: 0.5em 1em;
-    font-size: 15px;
+
+  /* Text */
+
+  .ai_chat h1 {
+    font-size: 28px;
   }
 
-  .lets-chat-frame .button.blue {
-    background: #496bef;
-    width: 250px;
+  .ai_chat p {
+    font-size: 12px;
+  }
+
+  form #name,
+  form #email {
+    width: 85%;
     height: 40px;
+    padding: 0 1em;
+  }
+
+  form .button {
     font-size: 15px;
-    position: relative;
-    left: 0;
-    transform: none;
-    margin-top: 10px;
+    width: 160px;
+    height: 40px;
+    margin: 1em 0 0 0;
   }
 }

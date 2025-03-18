@@ -1,4 +1,7 @@
-.title-frame {
+/* --- PC Devices --- */
+
+/* Frames */
+.title {
   width: 100%;
   margin-top: 30px;
   display: flex;
@@ -15,46 +18,42 @@
 
 .dropdown-frame {
   width: 60%;
+  margin: 0 15px;
   display: flex;
   flex-direction: row;
-  gap: 35px;
+  gap: 58px;
   align-items: center;
   justify-content: flex-end;
   z-index: 2;
 }
 
-.dropdown-arrow {
-  width: 15px;
-  height: 10px;
-}
-
+/* Logo */
 .MxD-logo-black {
-  width: 156px;
   height: 45px;
-  object-fit: cover;
 }
 
-.work-with-us {
-  background: #496bef;
-  width: 180px;
-  height: 40px;
-  color: #ffffff;
-  text-align: center;
-  font-size: 20px;
+/* Button */
+.title button.blue {
+  width: 189px;
+  height: 41px;
   font-weight: 400;
 }
 
-.dropdown {
-  display: inline-block;
+/* Dropdown */
+.dropdown-button img {
+  height: 10px;
 }
 
-.dropbtn {
-  background: #ffffff;
-  color: #000000;
-  padding: 16px;
-  font-size: 20px;
+.dropdown-button button {
   border: none;
-  border-radius: 20px;
+  border-radius: 10px;
+  font-weight: 400;
+  line-height: 1em;
+}
+
+.dropdown-button button:hover {
+  background: none;
+  font-weight: 600;
 }
 
 .dropdown-content {
@@ -65,11 +64,12 @@
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   font-size: 18px;
   white-space: nowrap;
+  padding: 10px;
 }
 
 .dropdown-content a {
   color: black;
-  padding: 8px 16px;
+  padding: 6px;
   text-decoration: none;
   display: block;
 }
@@ -78,13 +78,24 @@
   background: #f1f1f1;
 }
 
-.dropdown:hover .dropdown-content {
+.dropdown-button:hover .dropdown-content {
   display: block;
 }
 
-/* Stilovi za telefone */
+/* --- TABLET Devices --- */
+@media (min-width: 768px) and (max-width: 1300px) {
+
+  /* Frames */
+  .dropdown-frame {
+    gap: 25px;
+  }
+}
+
+/* --- MOBILE Devices --- */
 @media (max-width: 768px) {
-  .title-frame {
+
+  /* Frames */
+  .title {
     flex-direction: column;
     align-items: center;
   }
@@ -96,15 +107,19 @@
   }
 
   .dropdown-frame {
-    margin: 15px 0;
-    width: 90%;
+    gap: 15px;
+    padding: 10px;
+    width: 100%;
     justify-content: center;
   }
 
-  .dropbtn {
-    width: 100%;
-    text-align: center;
-    padding: 4px 8px;
+  /* Dropdown */
+  .dropdown-button button {
+    font-size: 16px;
+  }
+
+  .dropdown-button {
+    width: 33.3%;
   }
 
   .dropdown-content {
@@ -115,9 +130,7 @@
   }
 
   .dropdown-content a {
-    color: black;
     padding: 6px 12px;
-    text-decoration: none;
-    display: block;
+    font-size: 14px;
   }
 }

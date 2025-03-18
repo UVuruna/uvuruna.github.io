@@ -1,146 +1,173 @@
-.verticles-frame {
+/* --- ALL Devices --- */
+
+/* Frames */
+
+.our_verticles {
   width: 100%;
   display: block;
   padding: 30px 0;
 }
 
-.verticles-title {
-  color: #000000;
-  text-align: left;
-  font-size: 55px;
-  font-weight: 600;
-  margin-bottom: 20px;
-}
-
-.verticles-text {
-  color: #000000;
-  text-align: justify;
-  font-size: 16px;
-  font-weight: 400;
-  max-width: 1100px;
-  margin-bottom: 60px;
-}
-
 #verticles-carousel {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  width: 100%;
   position: relative;
 }
 
-.verticles.card-container {
-  width: 300px;
-  flex-shrink: 0;
+.our_verticles .card {
+  width: 309px;
   display: flex;
   flex-direction: column;
 }
 
-.verticles.card {
-  width: 100%;
-  height: 200px;
-  background-position: center;
-  background-size: center;
-  background-repeat: no-repeat;
+.our_verticles .card .frame {
+  height: 170px;
+  display: flex;
+  flex-direction: column;
+  padding: 0 35px;
 }
 
-.verticles.cardtitle {
-  padding: 25px 25px 0 25px;
-  font-size: 25px;
-  font-weight: 500;
-  height: 80px;
+/* Text */
+
+.our_verticles > h1 {
+  margin-bottom: 20px;
+}
+
+.our_verticles > p {
+  max-width: 1100px;
+  margin-bottom: 60px;
+}
+
+.card h3 {
+  margin: auto 0;
   line-height: 1.2;
+  font-weight: 500;
 }
 
-.verticles.cardtext {
-  padding: 25px 25px 25px 25px;
-  font-size: 16px;
-  font-weight: 400;
-  height: 100px;
+.card p {
+  height: 40%;
 }
 
-.verticles.card1 {
-  background-image: url('../Data/Images/verticles-direct-to-consumer.webp');
+/* Images */
+
+.our_verticles .card img {
+  object-fit: contain;
 }
-.verticles.card2 {
-  background-image: url('../Data/Images/verticles-b2b-marketing.webp');
-}
-.verticles.card3 {
-  background-image: url('../Data/Images/verticles-consumer-services.webp');
-}
-.verticles.card4 {
+
+.our_verticles .track > :nth-child(4) img {
   background-color: #fff7f7;
 }
-.verticles.card5 {
+
+.our_verticles .track > :nth-child(5) img {
   background-color: #eeeaea;
 }
-.verticles.card6 {
+
+.our_verticles .track > :nth-child(6) img {
   background-color: #b1c1fe;
 }
-.verticles.card7 {
+
+.our_verticles .track > :nth-child(7) img {
   background-color: #646060;
 }
-.verticles.card8 {
+
+.our_verticles .track > :nth-child(8) img {
   background-color: #fff7f7;
 }
-.verticles.card9 {
+
+.our_verticles .track > :nth-child(9) img {
   background-color: #eeeaea;
 }
 
-.verticles.card-bottom-frame1 {
+/* Cards */
+
+.our_verticles .track > :nth-child(1) :not(img) {
   background-color: #d9d9d9;
 }
-.verticles.card-bottom-frame2 {
+
+.our_verticles .track > :nth-child(2) :not(img) {
   background-color: #496bef;
   color: #ffffff;
 }
-.verticles.card-bottom-frame3 {
+
+.our_verticles .track > :nth-child(3) :not(img) {
   background-color: #000000;
   color: #ffffff;
 }
-.verticles.card-bottom-frame4 {
+
+.our_verticles .track > :nth-child(4) :not(img) {
   background-color: #ffffff;
 }
-.verticles.card-bottom-frame5 {
+
+.our_verticles .track > :nth-child(5) :not(img) {
   background-color: #d9d9d9;
 }
-.verticles.card-bottom-frame6 {
+
+.our_verticles .track > :nth-child(6) :not(img) {
   background-color: #496bef;
   color: #ffffff;
 }
-.verticles.card-bottom-frame7 {
+
+.our_verticles .track > :nth-child(7) :not(img) {
   background-color: #000000;
   color: #ffffff;
 }
-.verticles.card-bottom-frame8 {
+
+.our_verticles .track > :nth-child(8) :not(img) {
   background-color: #ffffff;
 }
-.verticles.card-bottom-frame9 {
+
+.our_verticles .track > :nth-child(9) :not(img) {
   background-color: #d9d9d9;
 }
+
+/* --- TABLET Devices --- */
+
+@media (min-width: 768px) and (max-width: 1300px) {
+  /* Frames */
+
+  .our_verticles > h1 {
+    font-size: 40px;
+    padding: 0 20px;
+  }
+
+  .our_verticles > p {
+    font-size: 13px;
+    padding: 0 20px;
+  }
+}
+
+/* --- MOBILE Devices --- */
 
 @media (max-width: 768px) {
-  .verticles.card-container {
-    width: 200px;
-  }
-  .verticles.card {
-    width: 100%;
-    background-position: center;
-    background-size: center;
-    background-repeat: no-repeat;
+  /* Frames */
+
+  .our_verticles .card {
+    width: 155px;
+    display: flex;
+    flex-direction: column;
   }
 
-  .verticles.cardtitle {
-    padding: 10px 10px 0 10px;
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 1.2;
-    height: 60px;
+  .our_verticles .card .frame {
+    height: 85px;
+    padding: 0 10px;
   }
 
-  .verticles.cardtext {
-    padding: 10px;
+  /* Text */
+
+  .our_verticles > h1 {
+    text-align: center;
+    font-size: 30px;
+  }
+
+  .our_verticles > p {
     font-size: 13px;
-    height: 80px;
+    padding: 0 20px;
+    margin-bottom: 30px;
+  }
+
+  .card h3 {
+    font-size: 16px;
+  }
+
+  .card p {
+    font-size: 9px;
   }
 }

@@ -1,164 +1,152 @@
-.scaling-business-frame {
-  background-image: url('../Data/Images/scaling-business-img.webp');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: #1f1f1f;
-  width: 100%;
+/* --- PC Devices --- */
+
+/* Frames */
+.scaling_business {
   position: relative;
+  width: 100%;
   display: flex;
   flex-direction: column;
   padding: 160px 120px 80px 120px;
 }
 
-.scaling-business-title {
-  color: #ffffff;
-  text-align: center;
-  font-size: 55px;
-  font-weight: 600;
-  position: relative;
-}
-
-.scaling-business-text-frame {
+.scaling_business-frame {
   display: flex;
   flex-direction: column;
   gap: 73px;
   align-items: flex-start;
   justify-content: flex-start;
-  width: 100%;
+  width: 95%;
   max-width: 900px;
   position: relative;
 }
 
-.scaling-business-team-frame,
-.scaling-business-support-frame,
-.scaling-business-partner-frame {
-  flex-shrink: 0;
+.scaling_business-frame>* {
   display: flex;
   flex-direction: row;
 }
-.scaling-business-team-1,
-.scaling-business-support-1,
-.scaling-business-partner-1 {
+
+.scaling_business-frame .text {
   width: 75%;
-  flex-shrink: 0;
   display: flex;
   flex-direction: column;
 }
-.scaling-business-team-2,
-.scaling-business-support-2,
-.scaling-business-partner-2 {
+
+.dot-frame {
   width: 25%;
-  padding-top: 20px;
+  padding: 20px;
+  display: flex;
+  justify-content: flex-end;
 }
 
-.scaling-business-team-title {
+/* Text */
+
+.scaling_business>h1 {
   color: #ffffff;
-  text-align: left;
-  font-size: 45px;
-  font-weight: 600;
+  text-align: center;
+}
+
+.scaling_business-frame h2,
+.scaling_business-frame h1 {
+  color: #ffffff;
   margin-bottom: 0.5em;
 }
 
-.scaling-business-support-title,
-.scaling-business-partner-title {
-  color: #ffffff;
-  text-align: left;
-  font-size: 55px;
-  font-weight: 600;
-  margin-bottom: 0.5em;
-}
-
-.scaling-business-team-explain,
-.scaling-business-support-explain,
-.scaling-business-partner-explain {
+.scaling_business-frame p {
   color: #ffffff;
   text-align: justify;
-  font-size: 16px;
-  font-weight: 400;
 }
 
-.scaling-business-ellipse {
+/* Image */
+
+.scaling_business>img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(50%);
+  z-index: -1;
+}
+
+.dot-frame>*:not(#vector) {
   background: #496bef;
   border-radius: 50%;
   width: 28px;
   height: 28px;
-  position: absolute;
-  right: 0;
 }
 
-.scaling-business-vector {
+#vector {
   height: 0;
   width: 28px;
   position: absolute;
-  right: 0;
 }
 
-@media (max-width: 1300px) {
-  .scaling-business-frame {
+/* --- TABLET Devices --- */
+
+@media (min-width: 768px) and (max-width: 1300px) {
+  /* Frames */
+
+  .scaling_business {
     padding: 35px 60px;
   }
-  .scaling-business-title {
-    font-size: 45px;
+
+  .scaling_business-frame {
+    gap: 30px;
+  }
+
+  /* Text */
+
+  .scaling_business h1 {
+    font-size: 35px;
     padding: 25px 0;
   }
 
-  .scaling-business-text-frame {
-    gap: 30px;
-  }
-  .scaling-business-team-title {
-    font-size: 35px;
+  .scaling_business h2 {
+    font-size: 30px;
+    padding: 25px 0;
   }
 
-  .scaling-business-support-title,
-  .scaling-business-partner-title {
-    font-size: 40px;
-  }
-
-  .scaling-business-team-explain,
-  .scaling-business-support-explain,
-  .scaling-business-partner-explain {
-    font-size: 16px;
+  .scaling_business p {
+    font-size: 14px;
   }
 }
 
+/* --- MOBILE Devices --- */
+
 @media (max-width: 768px) {
-  .scaling-business-frame {
+  /* Frames */
+
+  .scaling_business {
     padding: 16px 25px 25px 10px;
   }
-  .scaling-business-title {
-    font-size: 35px;
+
+  .scaling_business-frame {
+    gap: 15px;
   }
 
-  .scaling-business-text-frame {
-    gap: 23px;
+  .scaling_business-frame .text {
+    width: 85%;
   }
 
-  .scaling-business-team-1,
-  .scaling-business-support-1,
-  .scaling-business-partner-1 {
-    width: 90%;
+  .dot-frame {
+    width: 15%;
+    padding: 29px 0;
   }
 
-  .scaling-business-team-2,
-  .scaling-business-support-2,
-  .scaling-business-partner-2 {
-    width: 10%;
-  }
+  /* Text */
 
-  .scaling-business-team-title {
+  .scaling_business h1 {
     font-size: 25px;
+    padding: 15px 0;
   }
 
-  .scaling-business-support-title,
-  .scaling-business-partner-title {
-    font-size: 30px;
+  .scaling_business h2 {
+    font-size: 20px;
+    padding: 15px 0;
   }
 
-  .scaling-business-team-explain,
-  .scaling-business-support-explain,
-  .scaling-business-partner-explain {
-    font-size: 13px;
+  .scaling_business p {
+    font-size: 12px;
   }
-
 }
