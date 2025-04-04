@@ -65,6 +65,10 @@ h2,
 h3,
 h4,
 h5,
+img,
+button,
+span,
+p,
 * {
   box-sizing: border-box;
   margin: 0;
